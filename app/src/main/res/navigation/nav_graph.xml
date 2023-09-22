@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeScreenFragment">
+
+    <fragment
+        android:id="@+id/homeScreenFragment"
+        android:name="com.example.eval7.fragments.HomeScreenFragment"
+        android:label="Home Screen"
+        tools:layout="@layout/fragment_home_screen">
+        <action
+            android:id="@+id/action_homeScreenFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_homeScreenFragment_to_unreadBooksFragment"
+            app:destination="@id/unreadBooksFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.eval7.fragments.AddFragment"
+        android:label="Add New Book"
+        tools:layout="@layout/fragment_add">
+        <action
+            android:id="@+id/action_addFragment_to_homeScreenFragment"
+            app:destination="@id/homeScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/unreadBooksFragment"
+        android:name="com.example.eval7.fragments.UnreadBooksFragment"
+        android:label="Your Unread Books" />
+</navigation>
