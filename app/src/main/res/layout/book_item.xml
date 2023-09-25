@@ -9,9 +9,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout"
-        android:layout_width="270dp"
-        android:layout_height="150dp"
-        android:layout_margin="30dp"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_margin="10dp"
         android:padding="2dp"
         android:background="@drawable/border">
 
